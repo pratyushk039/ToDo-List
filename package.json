@@ -1,0 +1,23 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Coding Ninjas Minor Project  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratyushk039/ToDo-List-Web-App"
+  },
+  "author": "Pratyush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratyushk039/ToDo-List-Web-App/issues"
+  },
+  "homepage": "https://github.com/pratyushk039/ToDo-List-Web-App#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
