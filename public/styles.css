@@ -1,0 +1,17 @@
+
+body{
+    background-image: url(../imgs/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.inline{
+    display: inline-block;
+}
+.flx{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    word-wrap: break-word;
+}
