@@ -54,16 +54,20 @@
 <%for(let i of tasklist){%>
   <%var id=i.task_id%>
   <%if(i.done==true){%>
-<div class="container col-5 bg-success text-center mb-2 border border-dark rounded text-white">
-  <p><%= i.task_text %></p>
-  <small class="form-text text-white">Due: <%=i.date%>&nbsp Category: <%=i.task_category%></small>
-</div>
-<form action="/toggle" method="post">
-  <input type="hidden"  name="id" value=<%=id%>>
-  <input type="hidden" name="state" value=<%=i.done%>>
-  <button type="submit" class="btn btn-warning">Done</button>
-</form>
-</div>
+    <div>
+      <div class="container col-5 bg-success text-center mb-2 border border-dark rounded text-white d-flex justify-content-between">
+        <div class="container col-8">
+        <p><%=i.task_text%></p>
+        <small class="form-text text-white">Due: <%=i.date%>&nbsp Category: <%=i.task_category%></small>
+        </div>
+        <div class="container col-4">
+        <form action="/toggle" method="post">
+          <input type="hidden"  name="id" value=<%=id%>>
+          <input type="hidden" name="state" value=<%=i.done%>>
+          <button type="submit" class="btn btn-warning mt-3">Done</button>
+        </form>
+      </div>
+    </div>
   <%}else{%>
     <div>
     <div class="container col-5 bg-dark text-center mb-2 border border-dark rounded text-white d-flex justify-content-between">
